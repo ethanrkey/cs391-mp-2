@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import '../App.css'
 
 const SettingsParentDiv=styled.div`
     display: flex;
@@ -30,6 +31,12 @@ const StartButton=styled.button`
     }
 `;
 
+const NumberInput = styled.input`
+    border-radius: 10px;
+    font-size: 3vw;
+    scale: .7;
+`;
+
 type SettingsProps = {
     numQuestions: number;
     difficulty: "easy" | "medium" | "hard" | "any";
@@ -52,7 +59,7 @@ export default function Settings({ numQuestions, difficulty, setNumQuestions, se
             <h3>Please choose from the following settings for the trivia questions you&apos;d like to answer!</h3>
             <SettingsDiv>
                 <p>How many questions? (Max: 50)</p>
-                <input type="number" placeholder="Number of questions" 
+                <NumberInput type="number" placeholder="Number of questions" 
                     value={localNumQuestions} onChange={(e) => {
                                                     const value = Number(e.target.value);
                                                     setLocalNumQuestions(value);

@@ -19,13 +19,13 @@ const ParentDiv=styled.div`
 `;
 
 const EndButtons=styled.button`
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-        color: #27242e;
-        background-color: white;  
-        transform: scale(1.05);  
-    }
+  &:hover {
+      color: #27242e;
+      background-color: white;  
+      transform: scale(1.05);  
+  }
 `;
 
 export default function App(){

@@ -34,6 +34,7 @@ const AnswerChoiceButton=styled.button`
     background-color: #ede1be;
     color: black;
     max-width: 25%;
+    font-size: 2vw;
 `;
 
 const AnswersDiv=styled.div`
