@@ -42,7 +42,7 @@ type SettingsProps = {
     difficulty: "easy" | "medium" | "hard" | "any";
     setNumQuestions: (value: number) => void;
     setDifficulty: (value: "easy" | "medium" | "hard" | "any") => void;
-    startQuiz: () => void; //why void?
+    startQuiz: () => void; 
 };
 
 export default function Settings({ numQuestions, difficulty, setNumQuestions, setDifficulty, startQuiz }: SettingsProps) {
